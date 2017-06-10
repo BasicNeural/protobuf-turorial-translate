@@ -123,7 +123,12 @@ XML은 또한 어느정도 자기설명적입니다.
 
 ## proto3 소개
 
-Our most recent version 3 release introduces a new language version - Protocol Buffers language version 3 (aka proto3), as well as some new features in our existing language version (aka proto2). Proto3 simplifies the protocol buffer language, both for ease of use and to make it available in a wider range of programming languages: our current release lets you generate protocol buffer code in Java, C++, Python, Java Lite, Ruby, JavaScript, Objective-C, and C#. In addition you can generate proto3 code for Go using the latest Go protoc plugin, available from the golang/protobuf Github repository. More languages are in the pipeline.
+최신 버전 3 릴리즈에는 새로운 언어가 추가되었습니다.
+프로토콜 버퍼 버전 3 (일명 proto3)뿐만이 아니라 기존 버전 (일명 proto2)에 몇 가지 새로운 기능이 있습니다.
+Proto3는 사용하기 쉽고 광범위한 프로그래밍 언어에서 사용할 수 있도록 프로토콜 버퍼 언어를 단순화합니다:
+현제 릴리즈 에서는 Java, C++, Python, Java Lite, Ruby, JavaScript, Objective-C, C# 코드로 생성할 수 있습니다.
+게다가 golang/protobuf Github 저장소에서 사용할 수 있는 Go porto3 플러그인을 사용하여 Go용 proto3 코드를 생성 할 수 있습니다.
+더 많은 언어가 파이프 라인에 있습니다.
 
 Note that the two language version APIs are not completely compatible. To avoid inconvenience to existing users, we will continue to support the previous language version in new protocol buffers releases.
 
