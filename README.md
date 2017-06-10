@@ -130,9 +130,11 @@ Proto3는 사용하기 쉽고 광범위한 프로그래밍 언어에서 사용�
 게다가 golang/protobuf Github 저장소에서 사용할 수 있는 Go porto3 플러그인을 사용하여 Go용 proto3 코드를 생성 할 수 있습니다.
 더 많은 언어가 파이프 라인에 있습니다.
 
-Note that the two language version APIs are not completely compatible. To avoid inconvenience to existing users, we will continue to support the previous language version in new protocol buffers releases.
+두 언어 버전의 API는 완벽하게 호환되지는 않습니다.
+기존 사용자의 불편을 피하기 위해 새로운 프로토콜 버퍼 릴리스에서 이전 언어 버전을 계속 지원할 것입니다.
 
-You can see the major differences from the current default version in the release notes and learn about proto3 syntax in the Proto3 Language Guide. Full documentation for proto3 is coming soon!
+대표적인 차이점을 최신 버전의 릴리즈 노트와 `proto3`에 대한 문법을 배울 수 있는 [Proto3 언어 가이드]에서 볼 수 있습니다.
+`proto3`에 대한 전체 문서는 곧 제공됩니다!
 
 (If the names proto2 and proto3 seem a little confusing, it's because when we originally open-sourced protocol buffers it was actually Google's second version of the language – also known as proto2. This is also why our open source version number started from v2.0.0).
 
