@@ -136,7 +136,7 @@ Proto3는 사용하기 쉽고 광범위한 프로그래밍 언어에서 사용�
 대표적인 차이점을 최신 버전의 릴리즈 노트와 `proto3`에 대한 문법을 배울 수 있는 [Proto3 언어 가이드]에서 볼 수 있습니다.
 `proto3`에 대한 전체 문서는 곧 제공됩니다!
 
-(If the names proto2 and proto3 seem a little confusing, it's because when we originally open-sourced protocol buffers it was actually Google's second version of the language – also known as proto2. This is also why our open source version number started from v2.0.0).
+(proto2와 proto3 사이의 작은 혼란이 있다면, 이것은 원래 구글의 2번째 버전이었던 것이 오픈소스 프로로토콜 버퍼가 된 것이고, 또한 그걸 proto2라고 불렀습니다. 이것은 또한 오픈소스 버전은 2.0.0 부터 시작했습니다).
 
 ## 약간의 역사
 
