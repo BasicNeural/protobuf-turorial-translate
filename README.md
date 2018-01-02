@@ -42,7 +42,7 @@
 이것들은 `name()`과 `set_name()`같은 각각의 필드에 대한 간단한 접근자를 제공하고 바이트에서 전체 구조를 직렬화 / 파싱하는 메서드를 제공합니다.
 그래서 예를 들면, C++ 언어를 선택한다면, 위의 예제에서 컴파일하면 Person이라는 클래스가 생성됩니다.
 그런 다음 응용 프로그램에서 이 클래스를 사용하여 `Person` 프로토콜 버퍼 메시지를 채우고 직렬화하여 검색 할 수 있습니다.
-당신은 다음과 같은 코드를 작성할 수 있습니다:
+당신은 다음과 같은 코드를 작성할 수 있습니다
 
     Person person;
     person.set_name("John Doe");
@@ -51,7 +51,7 @@
     fstream output("myfile", ios::out | ios::binary);
     person.SerializeToOstream(&output);
 
-그러면, 나중에 메시지를 읽을 수 있습니다:
+그러면, 나중에 메시지를 읽을 수 있습니다
 
     fstream input("myfile", ios::in | ios::binary);
     Person person;
@@ -67,7 +67,7 @@
 ## 왜 XML을 사용하지 않는가?
 
 프로토콜 버퍼는 구조화된 데이터를 직렬화 하는 데에 XML보다 많은 장점을 가지고 있습니다.
-프로토콜 버퍼:
+프로토콜 버퍼는
 
 * 간단함
 * 3-10배 작음
@@ -75,14 +75,14 @@
 * 덜 모호
 * 프로그래밍 하기 쉽게 데이터 엑세스 클래스를 생성
 
-예를 들어, 이름과 이메일을 가진 사람을 모델링 한다고 가정 해 봅시다. XML 에서는 다음과 같이 해야 합니다:
+예를 들어, 이름과 이메일을 가진 사람을 모델링 한다고 가정 해 봅시다. XML 에서는 다음과 같이 해야 합니다
 
     <person>
       <name>John Doe</name>
       <email>jdoe@example.com</email>
     </person>
 
-해당 프로토콜의 버퍼 메시지(프로토콜 버퍼 텍스트 형식)는:
+해당 프로토콜의 버퍼 메시지(프로토콜 버퍼 텍스트 형식)는
 
     # Textual representation of a protocol buffer.
     # This is *not* the binary format used on the wire.
@@ -98,7 +98,7 @@ XML 버전은 만약 공백을 자우면 최소 69 바이트고 5,000-10,000ns �
     cout << "Name: " << person.name() << endl;
     cout << "E-mail: " << person.email() << endl;
 
-반면 XML은 다음과 같은 작업을 수행 해야합니다:
+반면 XML은 다음과 같은 작업을 수행 해야합니다
 
     cout << "Name: "
          << person.getElementsByTagName("name")->item(0)->innerText()
